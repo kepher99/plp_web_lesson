@@ -1,0 +1,41 @@
+#green_paragraph{
+  color: green;
+  font-size: 20px;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.red_paragraph{
+  color: red;
+  font-size: 50px;
+  font-style: arial;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+  /*width: 800px;
+  height: 500px;
+  border: 1px solid green;
+  padding: 10px;
+  margin: 30px;
+}
+
+.container img{
+  width: 800px;
+  height: 500px;
+  */
+  display: flex;
+}
+
+.item{
+  padding: 
+  5px;
+}
+.container img{
+  width: 100%;
+  height: auto;
+}
+
+body{
+  background-color: yellow;
+}
