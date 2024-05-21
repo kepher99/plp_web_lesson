@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #myParagraph{
+      font-size: 18px;
+      color: #333;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #changeText{
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #myBtn{
+      background-color: rgba(24, 139, 24, 0.685);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <p id="myParagraph">This is my paragraph</p>
+  <button id="changeText">Change Text</button>
+  <button id="myBtn">Click Me!</button>
+
+  <script>
+    const button = document.querySelector('#changeText');
+
+    function newText(event) {
+      const p = document.querySelector('#myParagraph');
+      p.innerText = 'The text has been changed shiznit';
+      console.log(event);
+    }
+
+    button.addEventListener('click', newText);
+
+    document.addEventListener('keydown',(event) => {
+        console.log('A key has been pressed.');
+        console.log(event.key);
+    });
+
+    document.addEventListener('keyup',(event) => {
+        console.log('A key has been released.');
+      });
+
+      document.addEventListener('mousedown',(event) => {
+        console.log('A mouse button has been pressed');
+      });
+
+      document.addEventListener('mouseup',(event) => {
+        console.log('A mouse button has been released');
+      });
+
+      
+      document.addEventListener('mouseover',(event) => {
+        console.log('The mouse button has moved');
+      });
+
+      const myBtn = document.querySelector('#myBtn');
+      myBtn.onclick = handleClick;
+
+      function handleClick(event) {
+        alert('The button is clicked');
+      }
+  </script>
+</body>
+</html>
